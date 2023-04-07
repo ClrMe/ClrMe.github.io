@@ -154,38 +154,59 @@ section h2 {
   margin-bottom: 20px;
 }
 
-.gallery {
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gallery-image {
   position: relative;
-  overflow-x: hidden;
 }
-.slider {
-  display: flex;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
+
+.gallery-image img {
+  max-width: 100%;
 }
-.slider-container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.slider img {
-  flex-shrink: 0;
-  width: 100%;
-  height: auto;
-}
+
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2em;
-  color: white;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
   cursor: pointer;
 }
-.arrow-left {
-  left: 0;
+
+.arrow:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
 }
-.arrow-right {
-  right: 0;
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.left:before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow.right:before {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .contact {
