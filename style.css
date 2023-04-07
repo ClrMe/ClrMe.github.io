@@ -194,7 +194,7 @@ section h2 {
 }
 
 .arrow.left {
-  left: 10px;
+  left: -20px;
 }
 
 .arrow.left:before {
@@ -202,7 +202,7 @@ section h2 {
 }
 
 .arrow.right {
-  right: 10px;
+  right: -20px;
 }
 
 .arrow.right:before {
