@@ -270,10 +270,10 @@ section h2 {
     width: 100%;
     text-align: center;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 3px;
   }
   .logo img {
-    max-width: 15%;
+    max-width: 5%;
   }
   .contact-container {
     flex-direction: column;
